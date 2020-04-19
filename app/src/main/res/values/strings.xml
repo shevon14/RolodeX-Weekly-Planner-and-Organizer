@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RolodeX</string>
+    <string-array name="HomePageListitems"></string-array>
+    <string name="title_activity_overview">OverviewActivity</string>
+    <string name="dialog_tittle">Exit</string>
+    <string name="dialog_message">Do you want to exit the app?</string>
+    <string name="dialog_bt1">Yes</string>
+    <string name="dialog_bt2">Cancel</string>
+    <string name="title_activity_plans_view">PlansViewActivity</string>
+</resources>

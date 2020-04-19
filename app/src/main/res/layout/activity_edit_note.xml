@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_note_Activity"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="          type your description           "
+        android:inputType="textMultiLine"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/Editdescriptiontxt"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:textAlignment="textStart"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Editdescriptiontxt"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_mic_black_24dp"
+                android:id="@+id/editnotemic"
+                android:onClick="editinputspeech"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Say something here"
+                android:layout_below="@id/editnotemic"
+                android:layout_centerHorizontal="true"
+                android:textStyle="italic"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:layout_marginLeft="150dp"
+        android:layout_below="@id/EditDeleteNotes"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:id="@+id/EditsaveNotes"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DELETE"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="120dp"
+        android:layout_below="@id/Editdescriptiontxt"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:id="@+id/EditDeleteNotes"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPlanActivity"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type Your Description"
+        android:textAlignment="center"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/colorPrimary"
+        android:maxLength="30"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/Edittxtdestype"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Which Days?"
+        android:textStyle="normal"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        android:textColor="@color/colorPrimary"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round_button"
+            android:text="SUN"
+            android:id="@+id/ESunday"
+            android:textColor="@color/colourWhite"/>
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/round_button"
+            android:text="Mon"
+            android:id="@+id/EMonday"
+            android:layout_toRightOf="@id/ESunday"
+            android:textColor="@color/colourWhite"/>
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round_button"
+            android:layout_marginLeft="5dp"
+            android:text="tue"
+            android:id="@+id/ETuesday"
+            android:layout_toRightOf="@id/EMonday"
+            android:textColor="@color/colourWhite"/>
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round_button"
+            android:layout_marginLeft="5dp"
+            android:text="wed"
+            android:id="@+id/EWednesday"
+            android:layout_toRightOf="@id/ETuesday"
+            android:textColor="@color/colourWhite"/>
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round_button"
+            android:layout_marginLeft="5dp"
+            android:text="thu"
+            android:layout_toRightOf="@id/EWednesday"
+            android:id="@+id/EThursay"
+            android:textColor="@color/colourWhite"/>
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round_button"
+            android:layout_marginLeft="5dp"
+            android:text="fri"
+            android:id="@+id/EFriday"
+            android:layout_toRightOf="@id/EThursay"
+            android:textColor="@color/colourWhite"/>
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/round_button"
+            android:text="Sat"
+            android:id="@+id/ESaturday"
+            android:layout_toRightOf="@id/EFriday"
+            android:textColor="@color/colourWhite"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What Time?"
+        android:textStyle="normal"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center"/>
+
+    <TimePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Edittimepicker"
+        android:timePickerMode="spinner"
+        android:background="@color/colourWhite"
+        android:numbersTextColor="@color/colorAccent"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mobile Sound Mode?"
+        android:textStyle="normal"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/Esoundmode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sound"
+            android:textAlignment="center"
+            android:textColor="@color/colourWhite"
+            android:background="@drawable/round_button"/>
+
+        <Button
+            android:id="@+id/Evibratemode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/Esoundmode"
+            android:layout_marginLeft="10dp"
+            android:text="Vibrate"
+            android:textAlignment="center"
+            android:textColor="@color/colourWhite"
+            android:background="@drawable/round_button"/>
+
+        <Button
+            android:id="@+id/ESilentmode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/Evibratemode"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/round_button"
+            android:text="Silent"
+            android:textAlignment="center"
+            android:textColor="@color/colourWhite" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DAY"
+        android:id="@+id/SUNview"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switchbtn"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:textSize="10dp"
+        android:focusable="false"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Notification and \n sound mode"
+        android:textAlignment="textEnd"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SUNview"
+        android:text="Time"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:id="@+id/timeview"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timeview"
+        android:text="YOUR Plan "
+        android:textSize="20dp"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:id="@+id/plandescriptionview"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sound MODE"
+        android:id="@+id/SOUNDview"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/plandescriptionview"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginBottom="5dp"/>
+
+
+</RelativeLayout>

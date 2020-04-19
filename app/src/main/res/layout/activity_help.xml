@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HelpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Plans - "
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt1"
+                android:layout_marginLeft="10dp"
+                android:text="  In this section you can you can plan your week. In here you can add a simple short description,which days you want (Can select more than one day), which time and your sound mode when the plan is start. \n  Once the time comes you will be notify with a notification which include your description as the title. when the notification received your mobile sound mode will be automatically change to the sound mode which you selected previously.\n   If you need to edit or delete a plan simply you can click on the plan which you wish to change in the list view. The options will be there. \n  Each row include a toggle button for on/off the notifications and sound mode change. Once you off it you can keep the plan as a draft."
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Notes"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/txt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt3"
+                android:layout_marginLeft="10dp"
+                android:text="  In this section you can add your notes. All the notes will be displayed separately in a list view. Once you click in a note row you can edit or delete the note which you selected."
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Calendar - "
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt5"
+                android:layout_marginLeft="10dp"
+                android:text="In this section a calendar view is included. From this activity you can access to the add plans activity and google calendar."
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txt6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="For more info connect with us via our website"
+                android:textColor="@color/colorAccent" />
+
+            <ImageButton
+                android:id="@+id/URLbtn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt6"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/ic_language_black_24dp" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
